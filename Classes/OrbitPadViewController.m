@@ -143,9 +143,13 @@
 	
 }
 
+
+
+
 - (void)draw{		
 	CGFloat xOffset = 0;
 	CGFloat yOffset = 0;
+	[Math rotateView:bouncingRect toPoint:CombineVel(bouncingRect.center, bouncingRect.velocity)];
 	for (id *star in stars) {
 		GravityPoint *g = (GravityPoint*)star;
 		

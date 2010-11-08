@@ -18,6 +18,13 @@
 + (CGFloat)yWithX:(CGFloat)x andSlope:(CGFloat)slope andIntercept:(CGFloat)intercept;
 + (CGFloat)offsetY:(CGFloat)angle radius:(CGFloat)radius;
 + (CGFloat)offsetX:(CGFloat)angle radius:(CGFloat)radius;
++(void)rotateView: (UIView *)transformView toPoint:(CGPoint)pt;
 //+ (CGFloat)centerOfmassBetweenBall1:(Ball*)ball1 ball2:(Ball*)ball2;
-				
+
+CGPoint CombineVel(CGPoint v1, CGPoint v2);
+float GetDist(CGPoint initialp, CGPoint secondp);
+CGPoint GetAngle(CGPoint initialp ,CGPoint secondp);
+CGPoint MultiplyVel(CGPoint cref , float mfact);
+BOOL OutOfBounds(CGPoint initialp);
+
 @end
